@@ -55,6 +55,7 @@ ul.tree
 {
     position: absolute;
     user-select: none;
+    margin-top: 2rem;
 }
 
 ul
@@ -99,9 +100,9 @@ li:has(details)::before
     display: block;
     position: absolute;
     content: "";
-    left: 0.375rem;
+    left: 0.345rem;
     top: 0.5rem;
-    width: 1px;
+    width: 2px;
     height: 1.5rem;
     background-color: salmon;
     z-index: -1;
