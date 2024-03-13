@@ -1,0 +1,16 @@
+.math
+{
+    --color: rgb(32, 127, 235);
+}
+
+.ss
+{
+    --color: salmon;
+}
+
+.sc
+{
+    --color: rgb(23, 187, 23);
+}
+
+ul.tree{position:absolute;user-select:none;margin-top:2rem}ul{list-style:none}summary{display:block;cursor:pointer}summary::before{margin-right:.3rem;display:inline-block;content:"";width:.55rem;height:.55rem;border:2px solid #000;background-color:#fff;border-radius:50%;transition:.2s;z-index:1}details[open] > summary::before{border-radius:25%;border:none;border:2px solid var(--color)}li{margin-top:-.05rem}li:has(details){position:relative}li:has(details)::before{display:block;position:absolute;content:"";left:.345rem;top:.5rem;width:2px;height:1.345rem;background-color:var(--color);z-index:-1}ul:not(.tree) > li:has(details):first-child::after{display:block;content:"";position:absolute;left:-2.15rem;top:0;width:2.5rem;height:.725rem;border-bottom:2px solid var(--color);border-left:2px solid var(--color);border-bottom-left-radius:.6rem;z-index:-1}li:has(details):last-child:not(.root)::before{height:0}
