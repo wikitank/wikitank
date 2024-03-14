@@ -125,6 +125,7 @@ li:not(:has(details))::before {
     display: block;
     content: "";
     position: absolute;
+
     left: 22.4px;
     top: 31.6px;
     width: 6.4px;
