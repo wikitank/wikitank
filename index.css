@@ -46,7 +46,28 @@ body
 
 .footer
 {
+    max-width: 90vw;
     color: gray;
     position: absolute;
     bottom: 1rem;
+    text-align: center;
+    z-index: -2;
 }
+
+div > ul.tree
+{
+    width: 25rem;
+    max-height: 25vh;
+    overflow: scroll;
+}
+
+div > ul.tree::-webkit-scrollbar 
+{
+    display: none;
+}
+
+div > ul.tree
+{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+} 

@@ -17,9 +17,32 @@ const tree = `
     </li>
     <li class="root ss">
         <details>
-        <summary>Social Sciences</summary>
+        <summary>Human Sciences</summary>
         <ul>
-            <li>Writing...</li>
+            <li>
+                <details>
+                <summary>Business Management</summary>
+                <ul>
+                    <li>Writing...</li>
+                </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                <summary>Psychology</summary>
+                <ul>
+                    <li>Writing...</li>
+                </ul>
+                </details>
+            </li>
+            <li>
+                <details>
+                <summary>Social Sciences</summary>
+                <ul>
+                    <li>Writing...</li>
+                </ul>
+                </details>
+            </li>
         </ul>
         </details>
     </li>
@@ -27,6 +50,22 @@ const tree = `
         <details>
             <summary>Sciences</summary>
             <ul>
+                <li>
+                    <details>
+                    <summary>Biology</summary>
+                    <ul>
+                        <li>Writing...</li>
+                    </ul>
+                    </details>
+                </li>   
+                <li>
+                    <details>
+                    <summary>Computer Science</summary>
+                    <ul>
+                        <li>Writing...</li>
+                    </ul>
+                    </details>
+                </li>   
                 <li>
                     <details>
                     <summary>Physics</summary>
@@ -43,9 +82,16 @@ const tree = `
                     </ul>
                     </details>
                 </li>   
+            </ul>
+        </details>
+    </li>
+    <li class="root lang">
+        <details>
+            <summary>Languages</summary>
+            <ul>
                 <li>
                     <details>
-                    <summary>Biology</summary>
+                    <summary>English A</summary>
                     <ul>
                         <li>Writing...</li>
                     </ul>
@@ -53,7 +99,23 @@ const tree = `
                 </li>   
                 <li>
                     <details>
-                    <summary>Computer Science</summary>
+                    <summary>English B</summary>
+                    <ul>
+                        <li>Writing...</li>
+                    </ul>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                    <summary>Swedish</summary>
+                    <ul>
+                        <li>Writing...</li>
+                    </ul>
+                    </details>
+                </li>   
+                <li>
+                    <details>
+                    <summary>日本語</summary>
                     <ul>
                         <li>Writing...</li>
                     </ul>
