@@ -54,7 +54,7 @@ const tree = `
                     <details>
                     <summary>Biology</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a href="article/biology/digestion.html">Digestion</a></li>
                     </ul>
                     </details>
                 </li>   
@@ -133,5 +133,11 @@ const table = new barium.tag("tree", () =>
     return [ tree, "div" ]
 });
 
+const modifiedTree = tree.replace(/href="(.*)"/g, "href=\"../../$1\"");
+const article_table = new barium.tag("article_tree", () => {
+    return [ modifiedTree, "div" ]
+});
+
 barium.add(table);
+barium.add(article_table);
 barium.initial();

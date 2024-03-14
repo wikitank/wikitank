@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Article</title>
+        <link rel="stylesheet" href="../table.css">
+        <link rel="stylesheet" href="article.css">
+        <script src="../barium.js" defer></script>
+        <script src="../table.js" defer></script>
+        <script src="article.js" defer></script>
+    </head>
+    <body>
+        <div class="center">
+            <article_tree></article_tree>
+        </div>
+        <div class="center">
+            <main>
+                <div class="flex">
+                    <button onclick="toggleBookmark()" id="bookmark" class="bookmark" data-src="template.html" data-text="Tempalte">
+                        <img src="../image/bookmark.svg">
+                        <img src="../image/bookmark_active.svg">
+                    </button>
+                    <div class="titles">
+                        <h1>Template</h1>
+                        <h3 class="author">By: Noel Nimstad</h3>
+                    </div>
+                </div>
+                <p>Content</p>
+            </main>
+        </div>
+    </body>
+</html>
