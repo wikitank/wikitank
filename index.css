@@ -1,7 +1,7 @@
 body 
 {
     font-family: sans-serif;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@ body
 
 .logo
 {
-    height: 6rem;
+    height: 96px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -18,29 +18,29 @@ body
 
 .mascot
 {
-    width: 6rem;
+    width: 96px;
 }
 
 .search
 {
-    margin-top: 1rem;
-    border-radius: 1rem;
+    margin-top: 16px;
+    border-radius: 16px;
     border: 1px solid #aaa;
-    padding: 0.5rem 1rem;
-    width: 25rem;
+    padding: 8px 16px;
+    width: 400px;
 }
 
 .gray 
 {
     color: #aaa;
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .title
 {
     margin: 0;
-    margin-left: 0.75rem;
-    font-size: 2.5rem;
+    margin-left: 12px;
+    font-size: 40px;
     color: #222;
 }
 
@@ -49,15 +49,16 @@ body
     max-width: 90vw;
     color: gray;
     position: absolute;
-    bottom: 1rem;
+    bottom: 16px;
     text-align: center;
     z-index: -2;
+    font-size: 0.65rem;
 }
 
 div > ul.tree
 {
-    width: 25rem;
-    max-height: 25vh;
+    width: 400px;
+    max-height: 40vh;
     overflow: scroll;
 }
 
