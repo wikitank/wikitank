@@ -46,7 +46,7 @@ summary::before
     border: 2px solid #000;
     background-color: #fff;
     border-radius: 50%;
-    transition: 0.6s;
+    transition: 0.1s;
     z-index: 1;
 }
 
