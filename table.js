@@ -16,7 +16,8 @@ const tree = `
                     <details>
                     <summary>Logarithms</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a href="article/math/how_to_solve.html">Exercises. How to Solve?</a></li>
+                        <li><a href="article/math/logarithms.html">Logaritms</a></li>
                     </ul>
                     </details>
                 </li>
