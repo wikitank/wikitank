@@ -118,8 +118,6 @@ p.note
 .home 
 {
     position: absolute;
-    border: 1px solid #aaa;
-    background-color: white;
     width: 2.5rem;
     height: 2.5rem;
     bottom: 1rem;
