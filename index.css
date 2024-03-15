@@ -57,7 +57,7 @@ body
 div > ul.tree
 {
     width: 400px;
-    max-height: 40vh;
+    max-height: 45vh;
     overflow: scroll;
 }
 
