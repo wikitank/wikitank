@@ -33,7 +33,23 @@ const tree = `
                 <details>
                 <summary>Social Sciences</summary>
                 <ul>
-                    <li><a>Writing</a></li>
+                    <li>
+                        <details>
+                        <summary>Swedish Politics</summary>
+                        <ul>
+                            <li>
+                                <details>
+                                <summary>Taxes</summary>
+                                <ul>
+                                    <li><a class="gdoc">Socialist taxes</a></li>
+                                    <li><a class="gdoc">Liberalist taxes</a></li>
+                                    <li><a class="gdoc">Conservatist taxes</a></li>
+                                </ul>
+                                </details>
+                            </li>
+                        </ul>
+                        </details>
+                    </li>
                 </ul>
                 </details>
             </li>
