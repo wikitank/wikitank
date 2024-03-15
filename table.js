@@ -134,7 +134,7 @@ const tree = `
                     <details>
                     <summary>日本語</summary>
                     <ul>
-                        <li><a>Writing</a></li>
+                        <li><a class="chain" href="https://www.tofugu.com/japanese-grammar/">Tofugu Grammar</a></li>
                     </ul>
                     </details>
                 </li>   
