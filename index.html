@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="table.css"/>
         <script src="barium.js" defer></script>
         <script src="table.js" defer></script>
+        <script src="search.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=0.75">
+        <link rel="icon" type="image/x-icon" href="image/favicon.ico">
     </head>
     <body>
         <section>
@@ -14,7 +16,10 @@
                 <img class="mascot" src="image/mascot.png">
                 <h1 class="title">WikiTank<span class="gray">.xyz</span></h1>
             </div>
-            <input class="search" placeholder="Search"/>
+            <div>
+                <input id="search-bar" class="search" placeholder="Search"/>
+                <div class="results inactive" id="results"></div>
+            </div>
             <tree></tree>
         </section>
         <p class="footer">WikiTank by Noel Nimstad & Mzhahid Sibai, alongst article contributors.</p>
