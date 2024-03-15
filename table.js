@@ -4,14 +4,8 @@ const tree = `
         <details>
             <summary>Mathematics</summary>
             <ul>
-                <li>
-                    <details>
-                    <summary>Quadratic Equations</summary>
-                    <ul>
-                        <li>Writing...</li>
-                    </ul>
-                    </details>
-                </li>
+                <li><a href="article/math/quad_equ.html">Quadratic Equations</a></li>
+                <li><a href="article/math/logarithms.html">Logarithms</a></li>
             </ul>
         </details>
     </li>
@@ -23,7 +17,7 @@ const tree = `
                 <details>
                 <summary>Business Management</summary>
                 <ul>
-                    <li>Writing...</li>
+                    <li><a>Writing</a></li>
                 </ul>
                 </details>
             </li>
@@ -31,7 +25,7 @@ const tree = `
                 <details>
                 <summary>Psychology</summary>
                 <ul>
-                    <li>Writing...</li>
+                    <li><a>Writing</a></li>
                 </ul>
                 </details>
             </li>
@@ -39,7 +33,7 @@ const tree = `
                 <details>
                 <summary>Social Sciences</summary>
                 <ul>
-                    <li>Writing...</li>
+                    <li><a>Writing</a></li>
                 </ul>
                 </details>
             </li>
@@ -69,7 +63,7 @@ const tree = `
                     <details>
                     <summary>Computer Science</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a>Writing</a></li>
                     </ul>
                     </details>
                 </li>   
@@ -77,7 +71,7 @@ const tree = `
                     <details>
                     <summary>Physics</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a>Writing</a></li>
                     </ul>
                     </details>
                 </li>
@@ -85,7 +79,7 @@ const tree = `
                     <details>
                     <summary>Chemistry</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a>Writing</a></li>
                     </ul>
                     </details>
                 </li>   
@@ -100,7 +94,7 @@ const tree = `
                     <details>
                     <summary>English A</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a>Writing</a></li>
                     </ul>
                     </details>
                 </li>   
@@ -108,7 +102,7 @@ const tree = `
                     <details>
                     <summary>English B</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a>Writing</a></li>
                     </ul>
                     </details>
                 </li>
@@ -116,7 +110,7 @@ const tree = `
                     <details>
                     <summary>Swedish</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a>Writing</a></li>
                     </ul>
                     </details>
                 </li>   
@@ -124,7 +118,7 @@ const tree = `
                     <details>
                     <summary>日本語</summary>
                     <ul>
-                        <li>Writing...</li>
+                        <li><a>Writing</a></li>
                     </ul>
                     </details>
                 </li>   
