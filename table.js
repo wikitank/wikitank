@@ -12,6 +12,14 @@ const tree = `
                     </ul>
                     </details>
                 </li>
+                <li>
+                    <details>
+                    <summary>Logarithms</summary>
+                    <ul>
+                        <li>Writing...</li>
+                    </ul>
+                    </details>
+                </li>
             </ul>
         </details>
     </li>
