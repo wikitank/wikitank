@@ -38,6 +38,7 @@ body
     border-radius: 0;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+    transform: translateY(-1px);
 }
 
 .gray 
@@ -90,6 +91,7 @@ div > ul.tree
     display: flex;
     flex-direction: column;
     border: 1px solid #aaa;
+    transform: translateY(-1px);
 }
 
 .results.inactive 
