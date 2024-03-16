@@ -1,7 +1,8 @@
 body 
 {
     font-family: sans-serif;
-    height: 100vh;
+    height: 100dvh;
+    max-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,6 +29,15 @@ body
     border: 1px solid #aaa;
     padding: 8px 16px;
     width: 400px;
+    outline: none;
+}
+
+.search.active 
+{
+    border-bottom: none;
+    border-radius: 0;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .gray 
@@ -71,3 +81,43 @@ div > ul.tree
     -ms-overflow-style: none; 
     scrollbar-width: none; 
 } 
+
+.results 
+{
+    position: absolute;
+    z-index: 1000;
+    width: 432px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #aaa;
+}
+
+.results.inactive 
+{
+    display: none;
+}
+
+.results > a 
+{
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: rgb(26, 81, 246);
+    width: 400px;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+
+.results > a:nth-child(2n)
+{
+    background-color: #eee;
+}
+
+.results > a:not(:last-child)
+{
+    border-bottom: 1px solid #ccc;
+}
+
+.results > a > span 
+{
+    color: black;
+}

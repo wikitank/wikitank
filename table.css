@@ -1,3 +1,8 @@
+:root 
+{
+    --base-font-size: 16px;
+}
+
 .math 
 {
     --color: rgb(32, 127, 235);
@@ -22,7 +27,7 @@ ul.tree
 {
     position: relative;
     user-select: none;
-    margin-top: 32px;
+    margin-top: 2rem;
 }
 
 ul 
@@ -36,17 +41,48 @@ summary
     cursor: pointer;
 }
 
+details > summary::marker,
+details > summary::-webkit-details-marker
+{
+  display: none;
+}
+
+li 
+{
+    margin-top: -0.05rem;
+    line-height: 1.525rem;
+    position: relative;
+}
+
+li:not(:has(details))
+{
+    padding-bottom: 0.1rem;
+}
+
 summary::before 
 {
-    margin-right: 4.8px;
+    margin-right: 0.3rem;
     display: inline-block;
     content: "";
-    width: 8.8px;
-    height: 8.8px;
-    border: 2px solid #000;
+    width: 0.55rem; 
+    height: 0.55rem; 
+    border: 0.125rem solid #000; 
     background-color: #fff;
     border-radius: 50%;
     transition: 0.1s;
+    z-index: 1;
+}
+
+li:not(:has(details)) > a::before
+{
+    content: "";
+    display: inline-block;
+    margin-left: 0.075rem;
+    margin-right: 0.35rem;
+    width: 0.4rem; 
+    height: 0.4rem; 
+    background-color: #fff;
+    border: 0.125rem solid black; 
     z-index: 1;
 }
 
@@ -54,55 +90,52 @@ details[open] > summary::before
 {
     border-radius: 25%;
     border: none;
-    border: 2px solid var(--color);
+    border: 0.125rem solid var(--color); 
 }
 
-li 
-{
-    margin-top: -0.8px;
-    line-height: 24.4px;
-}
-
-li:has(details) 
-{
-    position: relative;
-}
-
-li:has(details)::before 
+li::before 
 {
     display: block;
     content: "";
     position: absolute;
+<<<<<<< HEAD
     left: 5.52px;
     top: 8px;
     width: 2px;
     height: calc(100% - 3.2px);
+=======
+    left: 0.345rem; 
+    top: 0.5rem; 
+    width: 0.125rem; 
+    height: calc(100% - 0.0125rem); 
+>>>>>>> 55d5516d2c0f7a539f25e41212226c3785c06410
     background-color: var(--color);
     z-index: -1;
 }
 
-ul:not(.tree) > li:has(details):first-child::after 
+ul:not(.tree) > li:first-child::after 
 {
     display: block;
     content: "";
     position: absolute;
-    left: -34.4px;
+    left: -2.15rem; 
     top: 0;
-    width: 40px;
-    height: 11.6px;
-    border-bottom: 2px solid var(--color);
-    border-left: 2px solid var(--color);
-    border-bottom-left-radius: 9.6px;
+    width: 2.5rem; 
+    height: 0.725rem; 
+    border-bottom: 0.125rem solid var(--color); 
+    border-left: 0.125rem solid var(--color); 
+    border-bottom-left-radius: 0.6rem; 
     z-index: -1;
 }
 
-li:has(details):not(:has(details[open])):last-child:not(.root)::before
+li:last-child:not(.root)::before 
 {
     height: 0;
 }
 
-li:has(details[open]):last-child:not(.root)::before
+li:last-child:not(.root)::before 
 {
+<<<<<<< HEAD
     height: 16px;
 }
 
@@ -131,6 +164,9 @@ li:not(:has(details))::before {
     height: 6.4px;
     background-color: white;
     border: 2px solid black;
+=======
+    height: calc(100% - 1.6rem)
+>>>>>>> 55d5516d2c0f7a539f25e41212226c3785c06410
 }
 
 ul.tree > li:last-child:not(:has(details[open]))::before 
@@ -138,9 +174,9 @@ ul.tree > li:last-child:not(:has(details[open]))::before
     height: 0;
 }
 
-ul.tree > li:last-child:has(details[open])::before 
+li:last-child:has(details[open])::before 
 {
-    height: 16px;
+    height: 1rem;
 }
 
 li > a 
@@ -154,4 +190,28 @@ li > a::before
 {
     content: ">";
     color: var(--color);
+}
+
+a.gdoc::after
+{
+    display: inline-block;
+    content: "";
+    width: 0.65rem;
+    height: 0.65rem;
+    margin-left: 0.2rem;
+    transform: translateY(0.075rem);
+    background-image: url("https://cdn-icons-png.flaticon.com/512/5968/5968517.png");
+    background-size: cover;
+}
+
+a.chain::after
+{
+    display: inline-block;
+    content: "";
+    width: 0.65rem;
+    height: 0.65rem;
+    margin-left: 0.2rem;
+    transform: translateY(0.075rem);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/56/Chain_link_icon_slanted.png");
+    background-size: cover;
 }

@@ -1,16 +1,30 @@
 body 
 {
     margin: 0;
-    height: 100vh;
+    min-height: 100dvh;
+    max-height: 100dvh;
     font-family: sans-serif;
     width: 100vw;
+    overflow-x: hidden;
 }
 
-ul.tree
+div > ul.tree
 {
-    height: 25vh;
+    max-height: 30vh;
+    overflow: scroll;
     border-bottom: 1px solid #aaa;
 }
+
+div > ul.tree::-webkit-scrollbar 
+{
+    display: none;
+}
+
+div > ul.tree
+{
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+} 
 
 .center 
 {
@@ -19,9 +33,14 @@ ul.tree
     justify-content: center;
 }
 
+h1 
+{
+    font-size: 1.5rem;
+}
+
 main 
 {
-    width: calc(100vw - 10rem);
+    width: calc(100vw - 7rem);
     max-width: 50rem;
 }
 
@@ -35,9 +54,8 @@ h3.author
 
 .bookmark
 {
-    width: 2.5rem;
-    height: 2.5rem;
-    border: none;
+    min-width: 2.5rem !important;
+    height: 2.5rem !important;
     background-color: white;
     border-radius: 20%;
     cursor: pointer;
@@ -97,4 +115,51 @@ p.note
     margin-top: -0.75rem;
     font-size: 0.85rem;
     color: #aaa;
+}
+
+.home 
+{
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home > img 
+{
+    height: 65%;
+}
+
+h2 
+{
+    font-size: 1.4rem;
+    margin-bottom: -0.5rem;
+}
+
+.center-image 
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.n 
+{
+    list-style: disc;
+}
+
+.lml 
+{
+    margin-top: -0.8rem;
+}
+
+.h20
+{
+    height: 20rem;
 }
