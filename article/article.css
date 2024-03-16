@@ -4,6 +4,7 @@ body
     min-height: 100dvh;
     font-family: sans-serif;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 div > ul.tree
@@ -117,7 +118,7 @@ p.note
 
 .home 
 {
-    position: absolute;
+    position: fixed;
     width: 2.5rem;
     height: 2.5rem;
     bottom: 1rem;
@@ -131,4 +132,33 @@ p.note
 .home > img 
 {
     height: 65%;
+}
+
+h2 
+{
+    font-size: 1.4rem;
+    margin-bottom: -0.5rem;
+}
+
+.center-image 
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.n 
+{
+    list-style: disc;
+}
+
+.lml 
+{
+    margin-top: -0.8rem;
+}
+
+.h20
+{
+    height: 20rem;
 }

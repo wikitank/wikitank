@@ -41,6 +41,12 @@ summary
     cursor: pointer;
 }
 
+details > summary::marker,
+details > summary::-webkit-details-marker
+{
+  display: none;
+}
+
 li 
 {
     margin-top: -0.05rem;
