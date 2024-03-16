@@ -98,17 +98,10 @@ li::before
     display: block;
     content: "";
     position: absolute;
-<<<<<<< HEAD
-    left: 5.52px;
-    top: 8px;
-    width: 2px;
-    height: calc(100% - 3.2px);
-=======
     left: 0.345rem; 
     top: 0.5rem; 
     width: 0.125rem; 
     height: calc(100% - 0.0125rem); 
->>>>>>> 55d5516d2c0f7a539f25e41212226c3785c06410
     background-color: var(--color);
     z-index: -1;
 }
@@ -135,38 +128,7 @@ li:last-child:not(.root)::before
 
 li:last-child:not(.root)::before 
 {
-<<<<<<< HEAD
-    height: 16px;
-}
-
-li:not(:has(details))::after 
-{
-    display: block;
-    content: "";
-    position: absolute;
-    left: 5.6px;
-    top: 24px;
-    width: 20px;
-    height: 11.6px;
-    border-bottom: 2px solid var(--color);
-    border-left: 2px solid var(--color);
-    border-bottom-left-radius: 9.6px;
-    z-index: -1;
-}
-
-li:not(:has(details))::before {
-    display: block;
-    content: "";
-    position: absolute;
-    left: 22.4px;
-    top: 31.6px;
-    width: 6.4px;
-    height: 6.4px;
-    background-color: white;
-    border: 2px solid black;
-=======
     height: calc(100% - 1.6rem)
->>>>>>> 55d5516d2c0f7a539f25e41212226c3785c06410
 }
 
 ul.tree > li:last-child:not(:has(details[open]))::before 

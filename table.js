@@ -4,28 +4,8 @@ const tree = `
         <details>
             <summary>Mathematics</summary>
             <ul>
-<<<<<<< HEAD
-                <li>
-                    <details>
-                    <summary>Quadratic Equations</summary>
-                    <ul>
-                        <li>Writing...</li>
-                    </ul>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                    <summary>Logarithms</summary>
-                    <ul>
-                        <li><a href="article/math/how_to_solve.html">Exercises. How to Solve?</a></li>
-                        <li><a href="article/math/logarithms.html">Logaritms</a></li>
-                    </ul>
-                    </details>
-                </li>
-=======
                 <li><a href="article/math/quad_equ.html">Quadratic Equations</a></li>
                 <li><a href="article/math/logarithms.html">Logarithms</a></li>
->>>>>>> 55d5516d2c0f7a539f25e41212226c3785c06410
             </ul>
         </details>
     </li>
