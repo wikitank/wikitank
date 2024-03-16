@@ -52,6 +52,12 @@ h3.author
     font-weight: 200;
 }
 
+h3.sub
+{
+    margin-bottom: -0.5rem;
+    margin-top: 2.5rem;
+}
+
 .bookmark
 {
     min-width: 2.5rem !important;
@@ -163,7 +169,15 @@ h2
 {
     height: 20rem;
 }
+
 .t-red
 {
     color:red;
+}
+
+.edited-date
+{
+    color: #aaa;
+    margin-top: -1rem;
+    font-size: 0.75rem;
 }
