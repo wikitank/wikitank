@@ -28,87 +28,39 @@
 
 // highlighting
 {
+    const keywords = [ { node: 26, index: 0, content: "The mouth" } ];
+
     const main = document.getElementsByTagName("main")[0];
-    let highlights = JSON.parse(localStorage.getItem("highlights")) || [];
 
-    const highlightButton = document.getElementById("highlight");
-    highlightButton.addEventListener("click", () => 
+    const textNodes = [];
+    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT)
+    while(walker.nextNode()) 
     {
-        let selection = window.getSelection();
-        const range = selection.getRangeAt(0);
-        const content = selection.toString();
+        textNodes.push(walker.currentNode);
+    }
 
-        if(range.startContainer !== range.endContainer) 
+    for(let keyword of keywords)
+    {
+        let index = textNodes[keyword.node].textContent.indexOf(keyword.content);
+        if(keyword.node <= textNodes.length && textNodes[keyword.node].textContent.includes(keyword.content) && index !== -1 && index === keyword.index)
         {
-            return alert("highlighting can't span over multiple paragraphs (or other highlights)!");
-        }
+            const range = new Range();
+            range.setStart(textNodes[keyword.node], index);
+            range.setEnd(textNodes[keyword.node], index + keyword.content.length);
 
-        if(content !== "")
-        {
             const span = document.createElement("span");
             span.classList.add("highlighted");
 
             range.surroundContents(span);
-
-            const index = selection.focusNode.textContent.indexOf(content);
-            highlights.push({ index: index, content: content, so: range.startOffset, eo: range.endOffset, l: content.length });
-
-            span.addEventListener("click", e => 
-            {
-                e.preventDefault();
-                span.classList.remove("highlighted");
-
-                highlights.splice(highlights.indexOf({ index: index, content: content, so: range.startOffset, eo: range.endOffset, l: selection.focusNode.length }, 1));
-            });
-        }
-    });
-
-    function checkHilight(node)
-    {
-        for(let highlight of highlights)
-        {            
-            const index = node.textContent.indexOf(highlight.content);
-            if(index !== -1 && index === highlight.index)
-            {
-                const range = document.createRange();
-                range.setStart(node, index);
-                range.setEnd(node, index + highlight.content.length);
-
-                const span = document.createElement("span");
-                span.classList.add("highlighted");
-                range.surroundContents(span);
-
-                span.addEventListener("click", e => 
-                {
-                    e.preventDefault();
-                    span.classList.remove("highlighted");
-    
-                    highlights.splice(highlights.indexOf(highlight), 1)
-                });
-            }
         }
     }
 
-    function traverseDocument(origin)
+    const highlighter = document.getElementById("highlight");
+    highlighter.addEventListener("click", () => 
     {
-        const walker = document.createTreeWalker(origin, NodeFilter.SHOW_TEXT, null, false);
-        const textNodes = [];
-
-        while(walker.nextNode())
-        {
-            textNodes.push(walker.currentNode);
-        }
-
-        for(let node of textNodes)
-        {
-            checkHilight(node);
-        }
-    }
-
-    traverseDocument(main);
-
-    window.addEventListener("unload", () => 
-    {
-        localStorage.setItem("highlights", JSON.stringify(highlights));
+        const selection = window.getSelection();
+        const content = selection.toString();
+        if(content === "") return;
+        if(selection.anchorNode !== selection.focusNode) return alert("Highlight can't span paragraphs nor other highlights.")
     });
 }
