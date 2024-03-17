@@ -150,9 +150,17 @@ h2
 .center-image 
 {
     width: 100%;
+    max-width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.center-image > img 
+{
+    max-width: 100%;
+    height: auto;
 }
 
 .n 
@@ -167,7 +175,7 @@ h2
 
 .h20
 {
-    height: 20rem;
+    max-height: 20rem !important;
 }
 
 .t-red
@@ -180,4 +188,36 @@ h2
     color: #aaa;
     margin-top: -1rem;
     font-size: 0.75rem;
+}
+
+.highlight
+{
+    position: fixed;
+    background: none;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 4rem;
+    right: 1rem;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.highlight > img 
+{
+    height: 80%;
+}
+
+.highlighted 
+{
+    background-color: #ffd413 !important;
+    cursor: pointer;
+}
+
+.highlighted:hover 
+{
+    background-color: #FFAB2D !important;
 }
