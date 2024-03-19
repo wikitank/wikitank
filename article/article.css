@@ -10,7 +10,7 @@ body
 
 div > ul.tree
 {
-    max-height: 30vh;
+    height: 30vh;
     overflow: scroll;
     border-bottom: 1px solid #aaa;
 }
@@ -155,12 +155,14 @@ h2
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .center-image > img 
 {
     max-width: 100%;
     height: auto;
+
 }
 
 .n 
@@ -177,7 +179,10 @@ h2
 {
     max-height: 20rem !important;
 }
-
+.h15
+{
+    max-height: 15rem !important;
+}
 .t-red
 {
     color:red;

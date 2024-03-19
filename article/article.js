@@ -28,7 +28,7 @@
 
 // highlighting
 {
-    const keywords = [ { node: 26, index: 0, content: "The mouth" } ];
+    const keywords = JSON.parse(localStorage.getItem("keywords")) || [];
 
     const main = document.getElementsByTagName("main")[0];
 
@@ -39,20 +39,31 @@
         textNodes.push(walker.currentNode);
     }
 
-    for(let keyword of keywords)
+    for(let i = 0; i < textNodes.length; i++)
     {
-        let index = textNodes[keyword.node].textContent.indexOf(keyword.content);
-        if(keyword.node <= textNodes.length && textNodes[keyword.node].textContent.includes(keyword.content) && index !== -1 && index === keyword.index)
+        let filteredKeywords = keywords.filter(k => k.node === i);
+        let sortedKeywords = filteredKeywords.sort((a, b) => { return a.index - b.index });
+        if(sortedKeywords.length !== 0)
         {
-            const range = new Range();
-            range.setStart(textNodes[keyword.node], index);
-            range.setEnd(textNodes[keyword.node], index + keyword.content.length);
+            let innerHTML = textNodes[i].parentElement.innerHTML;
+            let offset = 0;
+            for(let k of sortedKeywords)
+            {
+                for(let j = 0; j < k.content.length; j++)
+                {
+                    innerHTML[k.index + j] = k.content[j];
+                    let output = innerHTML.substring(0, k.index) + "<span class=\"highlighted\">" + innerHTML.substring(k.index);
+                    offset += 26;
+                    output = output.substring(0, k.index + offset + k.content.length) + "</span>" + output.substring(k.index + offset + k.content.length);
+                    offset += 7;
+                    innerHTML = output;
+                }
+            }
 
-            const span = document.createElement("span");
-            span.classList.add("highlighted");
-
-            range.surroundContents(span);
+            textNodes[i].parentElement.innerHTML = innerHTML;
         }
+
+        console.log(textNodes[i]);
     }
 
     const highlighter = document.getElementById("highlight");
@@ -62,5 +73,20 @@
         const content = selection.toString();
         if(content === "") return;
         if(selection.anchorNode !== selection.focusNode) return alert("Highlight can't span paragraphs nor other highlights.")
+
+        const node = textNodes.indexOf(selection.anchorNode);
+        console.log(selection);
+        const range = selection.getRangeAt(0);
+        keywords.push({ node: node, index: range.startOffset, content: content });
+
+        const span = document.createElement("span");
+        span.classList.add("highlighted");
+
+        range.surroundContents(span);
+    });
+
+    window.addEventListener("unload", () => 
+    {
+        localStorage.setItem("keywords", JSON.stringify(keywords));
     });
 }
