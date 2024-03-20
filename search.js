@@ -3,6 +3,7 @@ const articles =
  // [ Title, Link, Category ]
     [ "Quadratic Equations", "article/math/quad_equ.html", "Math" ],
     [ "Logarithms", "article/math/logarithms.html", "Math" ],
+    [ "Circulatory System", "article/biology/circulatory_system.html", "Biology" ],
     [ "Digestion", "article/biology/digestion.html", "Biology" ]
 ];
 

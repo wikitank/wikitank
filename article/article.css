@@ -165,11 +165,6 @@ h2
 
 }
 
-.n 
-{
-    list-style: disc;
-}
-
 .lml 
 {
     margin-top: -0.8rem;
@@ -225,4 +220,14 @@ h2
 .highlighted:hover 
 {
     background-color: #FFAB2D !important;
+}
+
+.underline 
+{
+    text-decoration: underline;
+}
+
+#main > ul
+{
+    list-style: disc;
 }
