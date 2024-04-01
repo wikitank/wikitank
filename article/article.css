@@ -178,6 +178,11 @@ h2
 {
     max-height: 15rem !important;
 }
+.h10
+{
+    max-height: 10rem !important;
+}
+
 .t-red
 {
     color:red;
@@ -230,4 +235,31 @@ h2
 #main > ul
 {
     list-style: disc;
+}
+
+.center-text 
+{
+    text-align: center;
+}
+
+a 
+{
+    color: #426de2;
+}
+
+a.normal
+{
+    color: #426de2 !important;
+}
+
+a.normal::before 
+{
+    display: none;
+}
+
+hr 
+{
+    margin: 3rem 2rem;
+    border: none;
+    border-top: 1px solid lightgray;
 }
