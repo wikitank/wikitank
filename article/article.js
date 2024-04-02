@@ -28,7 +28,7 @@
 
 // TankDown
 {
-    function TankDown(input){let i=input;i=i.replace(/;n/g, "<br>");i=i.replace(/;#(\.\[(.*)\])? (.*)/g,"<h1 class=\"$2\">$3</h1>");i=i.replace(/;##(\.\[(.*)\])? (.*)/g,"<h2 class=\"$2\">$3</h2>");i=i.replace(/;###(\.\[(.*)\])? (.*)/g,"<h3 class=\"$2\">$3</h3>");i=i.replace(/;####(\.\[(.*)\])? (.*)/g,"<h4 class=\"$2\">$3</h4>");i=i.replace(/;%(\d+)(\.\[(.*)\])? (.*)/g,"<div class=\"center-image\"><img class=\"h$1 $3\" src=\"$4\"/></div>");i=i.replace(/;(\.\[(.*)\])? (.*)/g,"<p class=\"$2\">$3</p>");i=i.replace(/;\*\*(.*)/g,"</ul>");i=i.replace(/;\*(\.\[(.*)\])?(.*)/g,"<ul class=\"$2\">");i=i.replace(/;- (.*)/g,"<li>$1</li>");i=i.replace(/s{ ?(.*) ?}(\.\[(.*)\])?/g,"<span class=\"$3\">$1</span>");return i}
+    function TankDown(e){let a=e;return a=a.replace(/;#(\.\[(.*)\])? (.*)/g,'<h1 class="$2">$3</h1>'),a=a.replace(/;##(\.\[(.*)\])? (.*)/g,'<h2 class="$2">$3</h2>'),a=a.replace(/;###(\.\[(.*)\])? (.*)/g,'<h3 class="$2">$3</h3>'),a=a.replace(/;####(\.\[(.*)\])? (.*)/g,'<h4 class="$2">$3</h4>'),a=a.replace(/;%(\d+)(\.\[(.*)\])? (.*)/g,'<div class="center-image"><img class="h$1 $3" src="$4"/></div>'),a=a.replace(/;%(\d+)%(\d+)(\.\[(.*)\])? (.*)/g,'<iframe width="$1" height="$2" src="$5" class="$4"></iframe>'),a=a.replace(/;(\.\[(.*)\])? (.*)/g,'<p class="$2">$3</p>'),a=a.replace(/;\*\*(.*)/g,"</ul>"),a=a.replace(/;\*(\.\[(.*)\])?(.*)/g,'<ul class="$2">'),a=a.replace(/;- (.*)/g,"<li>$1</li>"),a=a.replace(/s{ ?(.*) ?}(\.\[(.*)\])?/g,'<span class="$3">$1</span>'),a=a.replace(/\[(.*)\]\((.*)\)(\.\[(.*)\])?/g,'<a class="$4" href="$2">$1</a>'),a};
     const main = document.getElementById("main");
     main.innerHTML = TankDown(main.innerHTML)
 }
