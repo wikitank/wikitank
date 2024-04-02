@@ -145,7 +145,7 @@ const table = new barium.tag("tree", () =>
     return [ tree, "div" ]
 });
 
-const modifiedTree = tree.replace(/href="(.*)"/g, "href=\"../../$1\"");
+const modifiedTree = tree.replace(/(?<!class="chain" )href="(.*)"/g, "href=\"../../$1\"");
 const article_table = new barium.tag("article_tree", () => {
     return [ modifiedTree, "div" ]
 });
