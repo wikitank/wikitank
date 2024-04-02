@@ -128,7 +128,7 @@ const tree = `
                     <details>
                     <summary>日本語</summary>
                     <ul>
-                        <li><a href="article/japanese/links.html">Good Links</a></li>
+                        <li><a href="article/japanese/links.html">日本語リンク集</a></li>
                         <li><a class="chain" href="https://www.tofugu.com/japanese-grammar/">Tofugu Grammar</a></li>
                     </ul>
                     </details>
