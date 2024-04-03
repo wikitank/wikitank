@@ -78,6 +78,7 @@ const tree = `
                     <ul>
                         <li><a href="article/biology/digestion.html">Digestion</a></li>
                         <li><a href="article/biology/circulatory_system.html">Circulary system</a></li>
+                        <li><a href="article/biology/blood.html">Blood</a></li>
                     </ul>
                     </details>
                 </li>   

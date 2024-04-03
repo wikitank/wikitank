@@ -308,3 +308,8 @@ p.credits
     color: white !important;
     text-decoration: underline 2px #FFAB2D;
 }
+
+ul.n 
+{
+    list-style: disc;
+}
