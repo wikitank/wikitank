@@ -1,3 +1,15 @@
+const footerHTML = `
+<div class="credits">
+    <h2>WikiTank</h2>
+    <p class="credits">By Noel Nimstad & Mzhahid Sibai</p>
+</div>
+<div class="footer-links">
+    <a href="../../../index.html">Home</a>
+    <br>
+    <a href="../../../index.html">Bookmarks</a>
+</div>
+`;
+
 const tree = `
 <ul class="tree">
     <li class="root math">
@@ -140,16 +152,22 @@ const tree = `
 `;
 
 // Barium
+const footer = new barium.tag("page_footer", () => 
+{
+    return [ footerHTML, "footer" ];
+});
+
 const table = new barium.tag("tree", () => 
 {
     return [ tree, "div" ]
 });
 
-const modifiedTree = tree.replace(/(?<!class="chain" )href="(.*)"/g, "href=\"../../$1\"");
-const article_table = new barium.tag("article_tree", () => {
-    return [ modifiedTree, "div" ]
+const article_table = new barium.tag("article_tree", () => 
+{
+    return [ tree.replace(/(?<!class="chain" )href="(.*)"/g, "href=\"../../$1\""), "div" ];
 });
 
+barium.add(footer);
 barium.add(table);
 barium.add(article_table);
 barium.initial();
