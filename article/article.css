@@ -191,9 +191,10 @@ h2
 
 .titles > h1 
 {
+    width: 100%;
     background-color: white;
     color: black;
-    padding: 0.25rem 1rem;
+    padding: 0.3rem 1.1rem 0.3rem 1.2rem;
     transform: translateX(-1.2rem);
 }
 
