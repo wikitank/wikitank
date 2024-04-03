@@ -259,7 +259,52 @@ a.normal::before
 
 hr 
 {
-    margin: 3rem 2rem;
+    margin: 2.5rem 1rem;
     border: none;
     border-top: 1px solid lightgray;
+}
+
+iframe 
+{
+    max-width: 100%;
+}
+
+footer 
+{
+    width: calc(100% - 1.5rem);
+    max-width: 100vw;
+    overflow-x: hidden;
+    height: fit-content;
+    position: static;
+    bottom: 0;
+    background: linear-gradient(180deg, #444, #111);
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    color: white;
+    margin-top: 5rem;
+}
+
+div.credits 
+{
+    padding-right: 1rem;
+    border-right: 1px solid #444;
+}
+
+p.credits 
+{
+    margin-top: 0.2rem;
+}
+
+.footer-links
+{
+    margin-top: 1rem;
+    display: block;
+    border-right: 1px solid #444;
+}
+
+.footer-links > a 
+{
+    color: white !important;
+    text-decoration: underline 2px #FFAB2D;
 }
