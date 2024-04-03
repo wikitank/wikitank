@@ -60,6 +60,7 @@ h3.sub
 
 .bookmark
 {
+    margin-left: 0.3rem;
     min-width: 2.5rem !important;
     height: 2.5rem !important;
     background-color: white;
@@ -186,6 +187,14 @@ h2
 .t-red
 {
     color:red;
+}
+
+.titles > h1 
+{
+    background-color: white;
+    color: black;
+    padding: 0.25rem 1rem;
+    transform: translateX(-1.2rem);
 }
 
 .edited-date
@@ -326,4 +335,25 @@ p.credits
 ul.n 
 {
     list-style: disc;
+}
+
+.cover 
+{
+    margin-bottom: -3.8rem;
+    width: 100%;
+    aspect-ratio: 4 / 1;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 410px)
+{
+    .cover
+    {
+        margin-bottom: -0.5rem;
+    }
+
+    .titles > h1 
+    {
+        font-size: 1.3rem;
+    }
 }
