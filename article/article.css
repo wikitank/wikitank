@@ -244,12 +244,20 @@ h2
 
 a 
 {
-    color: #426de2;
+    color: black;
+    text-decoration: 2px underline #426de2;
+    transition: 0.1s ease;
+}
+
+a:hover, a.normal:hover
+{
+    text-decoration: 4px underline #426de2;
 }
 
 a.normal
 {
-    color: #426de2 !important;
+    color: black;
+    text-decoration: 2px underline #426de2;
 }
 
 a.normal::before 
@@ -307,6 +315,12 @@ p.credits
 {
     color: white !important;
     text-decoration: underline 2px #FFAB2D;
+    transition: 0.1s ease;
+}
+
+.footer-links > a:hover 
+{
+    text-decoration: underline 4px #FFAB2D;
 }
 
 ul.n 
