@@ -53,8 +53,8 @@ const tree = `
                                 <details>
                                 <summary>Taxes</summary>
                                 <ul>
-                                    <li><a class="gdoc">Socialist taxes</a></li>
-                                    <li><a class="gdoc">Liberalist taxes</a></li>
+                                    <li><a href="https://docs.google.com/document/d/1hodvCH_iAncN_BMAoXrpXhzZFcTu1O2zNGkmxpUXCXA/edit?usp=sharing" class="gdoc">Socialist taxes</a></li>
+                                    <li><a href="https://docs.google.com/document/d/1S6Lv9STvT0ccPfrvxucx8mXH_iXsLSpTVlw8Jizgw6k/edit" class="gdoc">Liberalist taxes</a></li>
                                     <li><a class="gdoc">Conservatist taxes</a></li>
                                 </ul>
                                 </details>
