@@ -191,6 +191,7 @@ h2
 
 .titles > h1 
 {
+    height: 2rem;
     width: 100%;
     background-color: white;
     color: black;
@@ -340,7 +341,7 @@ ul.n
 
 .cover 
 {
-    margin-bottom: -3.8rem;
+    margin-bottom: -3.5rem;
     width: 100%;
     aspect-ratio: 4 / 1;
     object-fit: cover;

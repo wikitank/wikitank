@@ -76,9 +76,17 @@ const tree = `
                     <details>
                     <summary>Biology</summary>
                     <ul>
-                        <li><a href="article/biology/digestion.html">Digestion</a></li>
-                        <li><a href="article/biology/circulatory_system.html">Circulary system</a></li>
-                        <li><a href="article/biology/blood.html">Blood</a></li>
+                        <li>
+                            <details>
+                            <summary>Human physiology</summary>
+                                <ul>
+                                    <li><a href="article/biology/blood.html">Blood</a></li>
+                                    <li><a href="article/biology/circulatory_system.html">Circulary system</a></li>
+                                    <li><a href="article/biology/digestion.html">Digestion</a></li>
+                                    <li><a href="article/biology/ventilation.html">Ventilation</a></li>
+                                </ul>
+                            </deatails>
+                        </li>
                     </ul>
                     </details>
                 </li>   
