@@ -1,8 +1,8 @@
 body 
 {
     margin: 0;
-    min-height: 100dvh;
-    max-height: 100dvh;
+    min-height: 100vh;
+    max-height: 100vh;
     font-family: sans-serif;
     width: 100vw;
     overflow-x: hidden;
@@ -192,6 +192,8 @@ h2
 .titles > h1 
 {
     height: 2rem;
+    display: flex;
+    align-content: center;
     width: 100%;
     background-color: white;
     color: black;
@@ -358,4 +360,21 @@ ul.n
     {
         font-size: 1.3rem;
     }
+}
+
+table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th
+{
+    background-color: black;
+    color: white;
+}
+
+th, td
+{
+    padding: 0.5rem;
 }

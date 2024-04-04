@@ -1,10 +1,13 @@
 const articles = 
 [
- // [ Title, Link, Category ]
+//  [ Title, Link, Category ]
     [ "Quadratic Equations", "article/math/quad_equ.html", "Math" ],
     [ "Logarithms", "article/math/logarithms.html", "Math" ],
     [ "Circulatory System", "article/biology/circulatory_system.html", "Biology" ],
-    [ "Digestion", "article/biology/digestion.html", "Biology" ]
+    [ "Blood", "article/biology/blood.html", "Biology" ],
+    [ "Ventilation", "article/biology/ventiolation.html", "Biology" ],
+    [ "Digestion", "article/biology/digestion.html", "Biology" ],
+    [ "Useful Links", "article/biology/links.html", "Japanese" ]
 ];
 
 const searchBar = document.getElementById("search-bar");
