@@ -173,7 +173,7 @@ const table = new barium.tag("tree", () =>
 
 const article_table = new barium.tag("article_tree", () => 
 {
-    return [ tree.replace(/(?<!class="(chain|gdoc)" )href="(.*)"/g, "href=\"../../$1\""), "div" ];
+    return [ tree.replace(/(?<!class="(chain|gdoc)" )href="(.*)"/g, "href=\"../../$2\""), "div" ];
 });
 
 barium.add(footer);
