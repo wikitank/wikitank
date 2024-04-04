@@ -53,8 +53,8 @@ const tree = `
                                 <details>
                                 <summary>Taxes</summary>
                                 <ul>
-                                    <li><a href="https://docs.google.com/document/d/1hodvCH_iAncN_BMAoXrpXhzZFcTu1O2zNGkmxpUXCXA/edit?usp=sharing" class="gdoc">Socialist taxes</a></li>
-                                    <li><a href="https://docs.google.com/document/d/1S6Lv9STvT0ccPfrvxucx8mXH_iXsLSpTVlw8Jizgw6k/edit" class="gdoc">Liberalist taxes</a></li>
+                                    <li><a class="gdoc" href="https://docs.google.com/document/d/1hodvCH_iAncN_BMAoXrpXhzZFcTu1O2zNGkmxpUXCXA/edit?usp=sharing">Socialist taxes</a></li>
+                                    <li><a class="gdoc" href="https://docs.google.com/document/d/1S6Lv9STvT0ccPfrvxucx8mXH_iXsLSpTVlw8Jizgw6k/edit">Liberalist taxes</a></li>
                                     <li><a class="gdoc">Conservatist taxes</a></li>
                                 </ul>
                                 </details>
@@ -173,7 +173,7 @@ const table = new barium.tag("tree", () =>
 
 const article_table = new barium.tag("article_tree", () => 
 {
-    return [ tree.replace(/(?<!class="chain" )href="(.*)"/g, "href=\"../../$1\""), "div" ];
+    return [ tree.replace(/(?<!class="(chain|gdoc)" )href="(.*)"/g, "href=\"../../$1\""), "div" ];
 });
 
 barium.add(footer);
