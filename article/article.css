@@ -170,7 +170,10 @@ h2
 {
     margin-top: -0.8rem;
 }
-
+.h30
+{
+    max-height: 30rem !important;
+}
 .h20
 {
     max-height: 20rem !important;
