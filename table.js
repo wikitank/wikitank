@@ -55,7 +55,7 @@ const tree = `
                                 <ul>
                                     <li><a class="gdoc" href="https://docs.google.com/document/d/1hodvCH_iAncN_BMAoXrpXhzZFcTu1O2zNGkmxpUXCXA/edit?usp=sharing">Socialist taxes</a></li>
                                     <li><a class="gdoc" href="https://docs.google.com/document/d/1S6Lv9STvT0ccPfrvxucx8mXH_iXsLSpTVlw8Jizgw6k/edit">Liberalist taxes</a></li>
-                                    <li><a class="gdoc">Conservatist taxes</a></li>
+                                    <li><a class="gdoc" href="https://docs.google.com/document/d/1bAqwxAmgbV7XzEL_Nvu5yzsADIZOkvXLkYb0EFSODFk/edit">Conservatist taxes</a></li>
                                 </ul>
                                 </details>
                             </li>
