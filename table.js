@@ -4,7 +4,7 @@ const footerHTML = `
     <p class="credits">By Noel Nimstad & Mzhahid Sibai</p>
 </div>
 <div class="footer-links">
-    <a href="../../../index.html">Home</a>
+    <a href="../../index.html">Home</a>
     <br>
     <a href="../../../index.html">Bookmarks</a>
 </div>
