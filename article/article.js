@@ -2,19 +2,19 @@
 {
     const bookmarkButton = document.getElementById("bookmark");
     const pageTitle = document.getElementById("title").innerHTML;
+
     function toggleBookmark() 
     {
-        bookmarkButton.classList.toggle("active");
+        bookmarkButton.classList.toggle("active");  
 
         let currentPage = window.location.href;
         let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
         
-        let index = bookmarks.indexOf([ currentPage, pageTitle ]);
-        console.log(bookmarks[0], [currentPage, pageTitle]);
-        console.log(bookmarks[0] == [currentPage, pageTitle]);
+        let index = bookmarks.findIndex(item => item[0] === currentPage && item[1] === pageTitle);
+        
         if (index === -1) 
         {
-            bookmarks.push([ currentPage, pageTitle ]);
+            bookmarks.push([currentPage, pageTitle]);
             localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
         } else
         {
@@ -23,10 +23,13 @@
         }
     }
 
-    if(JSON.parse(localStorage.getItem('bookmarks'))?.includes([ window.location.href, pageTitle ]))
+    if(JSON.parse(localStorage.getItem('bookmarks'))?.some(item => item[0] === window.location.href && item[1] === pageTitle))
     {
         bookmarkButton.classList.add("active");
-    } else { bookmarkButton.classList.remove("active"); };
+    } else 
+    { 
+        bookmarkButton.classList.remove("active"); 
+    }
 }
 
 // TankDown
