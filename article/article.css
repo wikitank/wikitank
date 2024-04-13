@@ -381,3 +381,18 @@ th, td
 {
     padding: 0.5rem;
 }
+
+.cur
+{ 
+  font-family: italic;
+}
+
+.t-orn
+{
+    color:orange;
+}
+
+.t-grn
+{
+    color:rgb(0, 167, 0);
+}

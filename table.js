@@ -47,19 +47,28 @@ const tree = `
                 <ul>
                     <li>
                         <details>
-                        <summary>Swedish Politics</summary>
+                        <summary>Lectures</summary>
                         <ul>
-                            <li>
-                                <details>
-                                <summary>Taxes</summary>
-                                <ul>
-                                    <li><a class="gdoc" href="https://docs.google.com/document/d/1hodvCH_iAncN_BMAoXrpXhzZFcTu1O2zNGkmxpUXCXA/edit?usp=sharing">Socialist taxes</a></li>
-                                    <li><a class="gdoc" href="https://docs.google.com/document/d/1S6Lv9STvT0ccPfrvxucx8mXH_iXsLSpTVlw8Jizgw6k/edit">Liberalist taxes</a></li>
-                                    <li><a class="gdoc" href="https://docs.google.com/document/d/1NAXipwokGdphBdbH3phXfROsfvD73wCjaSJvafVMvl0/edit">Conservatist taxes</a></li>
-                                </ul>
-                                </details>
-                            </li>
+                            <li><a href="article/social_science/env_ehtics1.html">§1:Environmental Ethics</a></li>
+                            <li><a href="article/social_science/env_ethics2.html">§2:Environmental Ethics (continuation)</a></li>
                         </ul>
+                        </details>
+                    </li>
+                    <li>    
+                        <details>
+                        <summary>Swedish Politics</summary>
+                            <ul>
+                                <li>
+                                <details>
+                                    <summary>Taxes</summary>
+                                    <ul>
+                                        <li><a class="gdoc" href="https://docs.google.com/document/d/1hodvCH_iAncN_BMAoXrpXhzZFcTu1O2zNGkmxpUXCXA/edit?usp=sharing">Socialist taxes</a></li>
+                                        <li><a class="gdoc" href="https://docs.google.com/document/d/1S6Lv9STvT0ccPfrvxucx8mXH_iXsLSpTVlw8Jizgw6k/edit">Liberalist taxes</a></li>
+                                        <li><a class="gdoc" href="https://docs.google.com/document/d/1NAXipwokGdphBdbH3phXfROsfvD73wCjaSJvafVMvl0/edit">Conservatist taxes</a></li>
+                                    </ul>
+                                </details>
+                                </li>
+                            </ul>
                         </details>
                     </li>
                 </ul>
@@ -86,7 +95,7 @@ const tree = `
                                     <li><a href="article/biology/ventilation.html">Ventilation</a></li>
                                     <li><a href="article/biology/immune_sys.html">Immune system</a></li>
                                 </ul>
-                            </deatails>
+                            </details>
                         </li>
                     </ul>
                     </details>
