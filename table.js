@@ -6,7 +6,7 @@ const footerHTML = `
 <div class="footer-links">
     <a href="../../index.html">Home</a>
     <br>
-    <a href="../../bookmark.html">Bookmarks</a>
+    <a href="../bookmark/bookmark.html">Bookmarks</a>
 </div>
 `;
 

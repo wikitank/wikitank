@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Article</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../table.css">
+        <link rel="stylesheet" href="../article.css">
+        <script src="../../barium.js" defer></script>
+        <script src="../article.js" defer></script>
+        <script src="../../table.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="../../image/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="center">
+            <article_tree></article_tree>
+        </div>
+        <div class="center">
+            <main>
+                <img src="https://images.unsplash.com/photo-1561865406-62a037159577?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va21hcmt8ZW58MHx8MHx8fDA%3D" class="cover"/>
+                <div class="flex">
+                    <div class="titles">
+                        <h1 id="title">Bookmarks</h1>
+                        <h3 class="author">By: Noel Nimstad and Mzhahid Sibai</h3>
+                    </div>
+                </div>
+                <div id="main">
+                    <ul></ul>
+                    <script>
+                        const bookmarks = JSON.parse(localStorage.getItem("bookmarks"));
+                        console.log(bookmarks);
+
+                        if(bookmarks && !bookmarks.length == 0)
+                        {          
+                            const ul = document.getElementsByTagName("ul")[0];
+                            for(let bookmark of bookmarks)
+                            {
+                                const li = document.createElement("li");
+                               const a = document.createElement("a");
+                               a.href = bookmark[0];
+                               a.innerText = bookmark[1];
+
+                               li.append(a);
+                               ul.append(li);
+                           }
+                        }
+                    </script>
+                </div>
+            </main>
+        </div>
+        
+        <page_footer></page_footer>
+        <a class="home" href="../../index.html">
+            <img src="../../image/home.svg">
+        </a>
+        <button id="highlight" class="highlight">
+            <img src="../../image/highlighter.svg"/>
+        </button>
+    </body>
+</html>
