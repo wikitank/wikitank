@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="../../table.css">
         <link rel="stylesheet" href="../article.css">
+        <link rel="stylesheet" href="bookmark.css">
         <script src="../../barium.js" defer></script>
         <script src="../article.js" defer></script>
         <script src="../../table.js" defer></script>
@@ -21,7 +22,6 @@
                 <div class="flex">
                     <div class="titles">
                         <h1 id="title">Bookmarks</h1>
-                        <h3 class="author">By: Noel Nimstad and Mzhahid Sibai</h3>
                     </div>
                 </div>
                 <div id="main">
@@ -32,23 +32,29 @@
 
                         if(bookmarks && !bookmarks.length == 0)
                         {          
-                            const ul = document.getElementsByTagName("ul")[0];
                             for(let bookmark of bookmarks)
                             {
-                                const li = document.createElement("li");
-                               const a = document.createElement("a");
+                                const ul = document.getElementsByTagName("ul")[0],
+                                      li = document.createElement("li"),
+                                      a = document.createElement("a");
                                a.href = bookmark[0];
                                a.innerText = bookmark[1];
 
                                li.append(a);
                                ul.append(li);
                            }
+                        } else 
+                        {
+                            const main = document.getElementById("main"),
+                                  p = document.createElement("p");
+                            p.innerText = "You have no bookmarks yet!";
+
+                            main.append(p);
                         }
                     </script>
                 </div>
             </main>
         </div>
-        
         <page_footer></page_footer>
         <a class="home" href="../../index.html">
             <img src="../../image/home.svg">

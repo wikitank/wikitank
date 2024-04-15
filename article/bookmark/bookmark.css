@@ -1,0 +1,28 @@
+.flex 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.titles 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.titles > h1
+{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transform: none;
+}
+
+#main:has(p)
+{
+    text-align: center;
+}
+
+#main:has(p) > ul 
+{
+    display: none;
+}   
