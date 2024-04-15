@@ -389,10 +389,29 @@ th, td
 
 .t-orn
 {
-    color:orange;
+    background-color: rgb(245, 227, 72);
 }
 
 .t-grn
 {
     color:rgb(0, 167, 0);
+}
+
+.align-top
+{
+    align-items: start;
+}
+
+.split50-50 > div
+{
+    flex: 1;
+}
+
+.callout 
+{
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 0.75rem;
+    color: black;
+    padding: 1rem;
 }

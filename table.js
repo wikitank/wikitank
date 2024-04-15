@@ -49,8 +49,8 @@ const tree = `
                         <details>
                         <summary>Lectures</summary>
                         <ul>
-                            <li><a href="article/social_science/env_ehtics1.html">§1:Environmental Ethics</a></li>
-                            <li><a href="article/social_science/env_ethics2.html">§2:Environmental Ethics (continuation)</a></li>
+                            <li><a href="article/social_science/env_ehtics1.html">Environmental Ethics: 1</a></li>
+                            <li><a href="article/social_science/env_ethics2.html">Environmental Ethics: 2</a></li>
                         </ul>
                         </details>
                     </li>
