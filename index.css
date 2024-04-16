@@ -123,3 +123,23 @@ div > ul.tree
 {
     color: black;
 }
+
+.goToBookmarksButton
+{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFAB2D;
+    border-radius: 0.5rem;
+}
+
+.goToBookmarksButton > img 
+{
+    width: 1.5rem;
+    height: 1.5rem;
+}
