@@ -94,6 +94,7 @@ const tree = `
                                     <li><a href="article/biology/digestion.html">Digestion</a></li>
                                     <li><a href="article/biology/ventilation.html">Ventilation</a></li>
                                     <li><a href="article/biology/immune_sys.html">Immune system</a></li>
+                                    <li><a href="article/biology/endocrine_system.html">Endocrine system</a></li>
                                 </ul>
                             </details>
                         </li>
