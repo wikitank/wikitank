@@ -1,0 +1,17 @@
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://noelnimstad.github.io/wikitank/</loc>
+        <lastmod>2024-05-04T10:09:19+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://noelnimstad.github.io/wikitank/article/bookmark/bookmark.html</loc>
+        <lastmod>2024-05-04T10:09:19+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://noelnimstad.github.io/wikitank/index.html</loc>
+        <lastmod>2024-05-04T10:09:19+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+</urlset>
