@@ -7,7 +7,7 @@ const articles =
     [ "Blood", "article/biology/blood.html", "Biology" ],
     [ "Ventilation", "article/biology/ventiolation.html", "Biology" ],
     [ "Digestion", "article/biology/digestion.html", "Biology" ],
-    [ "Useful Links", "article/biology/links.html", "Japanese" ],
+    [ "Useful Links", "article/japanese/links.html", "Japanese" ],
     [ "Environmental Ethics: 1", "article/social_science/env_ethics1.html", "Social Sciences" ],
     [ "Environmental Ethics: 2", "article/social_science/env_ethics2.html", "Social Sciences" ],
 ];
