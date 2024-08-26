@@ -415,3 +415,54 @@ th, td
     color: black;
     padding: 1rem;
 }
+
+#noel
+{
+    fill:black;
+    height: 28px;
+    width: 28px;
+    margin: 10px;
+}
+
+#sidebar
+{
+    width: 230px;
+    height: 100vh;
+    background-color: rgb(255, 253, 237);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sidebar-item
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 1em;
+    align-items: center;
+    cursor: pointer;
+
+}
+.sidebar-item:hover
+{
+    background-color: rgb(255, 248, 193);
+}
+.sidebar-item > div
+{
+    padding: 0 1em;
+}
+
+#overlay
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
