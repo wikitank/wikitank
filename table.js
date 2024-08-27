@@ -105,7 +105,8 @@ const tree = `
                     <details>
                     <summary>Computer Science</summary>
                     <ul>
-                        <li><a>Writing</a></li>
+                        <li><a href="article/cs/t1.html">Systems in Organisations</a></li>
+                        <li><a href="article/cs/t2.html">Computer Organisation</a></li>
                     </ul>
                     </details>
                 </li>   
