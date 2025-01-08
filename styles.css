@@ -76,7 +76,7 @@ hr
 	height: 8rem;
 	display: flex;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
-	width: calc((3.5rem + 1px) * 2 - 1px);
+	width: calc((3.5rem + 1px) * 3 - 1px);
 }
 
 .course 
