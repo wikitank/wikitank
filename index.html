@@ -6,7 +6,7 @@
 	<body>
 		<main>
 			<h1>Wikitank<sup style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: gray;">2</sup></h1>
-			<h2>for the IBDP, for free</h2>
+			<h2>for the IBDP, for <span id="free" style="color: #aaa; font-family: 'merriweather', serif;"></span>, forever.</h2>
 			<hr>
 			<h2 class="black">Courses</h2>
 			<div class="courses">
@@ -14,6 +14,21 @@
 				<div onclick="window.location = 'chemistry/chemistry.html'" class="course" style="background-color: rgb(19, 207, 6);">Chemistry<span>→</span></div>
 				<div class="course" style="background-color: rgb(30, 30, 30);">Resources<span>→</span></div>
 			</div>
+			<script>
+				const freeText = document.getElementById("free");
+
+				const words = 
+				[
+					"free",
+					"gratis",
+					"вільний",
+					"無料",
+					"miễn phí",
+					"무료",
+				];
+
+				freeText.innerText = words[Math.floor(Math.random() * words.length)];
+			</script>
 		</main>
 	</body>
 </html>
