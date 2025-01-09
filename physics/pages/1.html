@@ -17,11 +17,41 @@
 	<body>
 		<main>
             <h1>Descriptions of motion</h1>
+            <h2>Scalars & Vectors</h2>
             <p>Motion can be expressed through mainly two different manners, <b>scalars</b> and <b>vectors</b>. A scalar represents just <i>a normal one-dimensional</i> ($\mathbb{R}$), which is to say numbers like $1, 1.5, \pi, 4, \frac{3}{2},$ etc.</p>
-            <p>A vector on the other hand, is a 2-dimensional ($\mathbb{R}^2$) number, meaning that it will have both some magnitude and a direction, which is useful in many cases for describing motion. In this course any vector $\vec{v}$ will be denoted as:</p>
+            <p>A vector on the other hand, is a <i>2-dimensional</i> ($\mathbb{R}^2$) <i>number</i>, meaning that it will have both some <i>magnitude and a direction</i>, which is useful in many cases for describing motion. In this course any vector $\vec{v}$ will be denoted as:</p>
             $$\vec{v}=\begin{bmatrix}x\\y\end{bmatrix}$$
-            <p>Where $x$ represents a scalar valued displacement in the $x$-direction from some origin point (usually $\begin{bmatrix}0\\0\end{bmatrix}$), and vice-verca for $y$.</p>
-            <p>Since the components of a vector form some sort of "right-angled triangle", the magnitude (or length), which is a scalar, of some vector $\vec{v}$ can be evaluated through pytahgoras theorem:</p>
+            <p style="margin-bottom: 2rem;">Where $x$ represents a scalar valued displacement in the $x$-direction from some origin point (usually $\begin{bmatrix}0\\0\end{bmatrix}$), and vice-verca for $y$. Plotting the vector $\vec{v}=\begin{bmatrix}4\\3\end{bmatrix}$ on a pair of axes would look something like:</p>
+            <div style="height: 300px; width: 300px; display: block; margin-left: auto; margin-right: auto; position: relative;">
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 0px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 30px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 60px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 90px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 120px;"></div>
+                <div style="width: 300px; height: 1px; background-color: black; position: absolute; top: 150px; z-index: 100;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 180px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 210px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 240px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 270px;"></div>
+                <div style="width: 300px; height: 1px; background-color: lightgray; position: absolute; top: 300px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 0px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 30px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 60px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 90px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 120px;"></div>
+                <div style="width: 1px; height: 300px; background-color: black; position: absolute; left: 150px; z-index: 100;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 180px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 210px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 240px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 270px;"></div>
+                <div style="width: 1px; height: 300px; background-color: lightgray; position: absolute; left: 300px;"></div>
+                <span style="position: absolute; font-size: 0.8rem; left: 288px; top: 130px;">$x$</span>
+                <span style="position: absolute; font-size: 0.8rem; left: 137px; top: -2px;">$y$</span>
+                <div style="width: 1px; height: 150px; background-color: rgb(123, 0, 255); position: absolute; left: 150px; transform-origin: bottom; transform: rotate(53.1301023537deg);"></div>
+                <span style="color: rgb(123, 0, 255); position: absolute; left: 262.5px; top: 48.5px; transform: rotate(-36.8698976463203deg);">></span>
+                <span style="color: rgb(123, 0, 255); position: absolute; left: 258px; top: 39px; font-size: 0.8rem;">$\vec{v}$</span>
+            </div>
+            <p style="margin-top: 2rem; margin-bottom: 2rem;">Since the components of a vector form some sort of "right-angled triangle", the magnitude (or length, denoted $\lVert\vec{v}\rVert$), which is a scalar value, of some vector $\vec{v}$ can be evaluated through pytahgoras theorem:</p>
             <div style="margin-bottom: 2rem; margin-left: auto; margin-right: auto; display: block; width: 50px; height: 75px; border-right: 1px solid red; border-bottom: 1px solid blue; position: relative;">
                 <div style="width: 1px; height: 90.1387818866px; background-color: gray; position: absolute; bottom: 0; left: 0; transform-origin: bottom; transform: rotate(33.5deg);"></div>
                 <span style="color: gray; font-size: 0.9rem; position: absolute; top: 15px; left: -5px;">$\lVert\vec{v}\rVert$</span>
@@ -29,6 +59,8 @@
                 <span style="position: absolute; top: 25px; right: -16px; color: red; font-size: 0.9rem;">$y$</span>
             </div>
             $$\lVert\vec{v}\rVert=\sqrt{x^2+y^2}$$
+            <hr>
+            <h2>The difference</h2>
             <p style="margin-top: 2rem;">Imagine someone walks along the circular path depicted as follows from the starting point marked in red:</p>
             <div style="position: relative; width: 100px; height: 100px; border-radius: 50px; border: 1px solid gray; margin-left: auto; margin-right: auto;">
                 <div style="height: 1px; width: 50px; position: absolute; top: 50px; left: 50px; background-color: black;"></div>
@@ -39,7 +71,9 @@
             $$l=2\pi r=10\pi\approx 31.4m$$
             <p style="margin-top: 2rem;">But in terms of displacement (a vector), they haven't even walked at all! But why? Well a vector has a magnitude and a vector to describe the movement from one point to another, and they've walked from the starting point to, ...the starting point! The magnitude (distance) inbetween the starting point and the starting point is $0m$, and the angle is $0^\circ$, so:</p>
             $$\vec{d}=\begin{bmatrix}0\\0\end{bmatrix}$$
-            <p style="margin-top: 2rem;">So be careful not to accidentaly mix them up!</p>
+            <p style="margin-top: 2rem;">Be careful not to accidentaly mix them up!</p>
+            <hr>
+            <h2>Practise questions</h2>
             <div class="goto">
                 <a href="1.html">← Previous</a>
                 <a href="1.html">Next →</a>
