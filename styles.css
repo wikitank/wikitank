@@ -142,3 +142,31 @@ p
 	color: gray !important;
 	text-decoration: none;
 }
+
+.question
+{
+	max-width: 600px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+details
+{
+	border: 1px solid #bbb;
+	cursor: pointer;
+	padding: 1rem;
+}
+  
+summary
+{
+	margin: -0.5em -0.5em 0;
+	padding: 0.5em;
+}
+  
+details[open] summary
+{
+	border-bottom: 1px dashed #bbb;
+	margin-bottom: 1em;
+}
+  
